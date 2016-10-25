@@ -1,0 +1,644 @@
+       /***    Navigation Bar  ***/
+.navbar {
+    margin-bottom: 0px;
+    z-index: 10000;
+    background: #061637;
+    border-color: #061637;
+    border-radius: 0px;
+    box-shadow: 0px 2px 8px black;
+}
+.navbar .container-fluid {
+    margin-left: -17px;
+}
+.navbar-header {
+    padding-left: 50px;
+    width: 50%;
+    background-color: #871231;
+}
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand img {
+    margin-top: 10px;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #FFF;
+    background-color: #040d20;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #FFF;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+    font-weight: bold;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ca1c4a;
+}
+    /***    End Navigation Bar  ***/
+    /***    header      ***/
+.header-logo {
+    border-bottom: 4px solid #9c1737;
+    background-image: url('../images/backgrounds/514517.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+}
+.header-logo .container-fluid {
+    height: 140px;
+}
+.header-logo .main-logo li {
+    list-style: none;
+    margin-top: 40px;
+}
+.header-logo .main-logo li a img {
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+    /***    End header  ***/
+    /***    schedule   ***/
+.schedule-bar {
+    background-color: #e4e6e7;
+}
+.schedule-bar h2 {
+    text-transform: uppercase;
+    color: #061637;
+    text-shadow: 1px 1px #061637;
+    font-size: 23px;
+}
+.all-schedule {
+    background: #d3223e;
+    font-weight: bold;
+    border: none;
+    padding: 7px 25px;
+    border-bottom: 4px solid #a01838;
+    margin-bottom: 10px;
+}
+.all-schedule:hover {
+    background-color: #0f2a56;
+    border-bottom: 4px solid #04112b;
+}
+.controls {
+    margin-top: 100px;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-style: none;
+    background-color: #061637;
+    transition-duration: 0.3s;
+}
+.controls i {
+    color: #FFF;
+}
+.controls:hover {
+    background-color: #013c65;
+}
+.controls:hover i {
+    color: #FFF;
+}
+.controls-false {
+    opacity: 0.6;
+    background-color: #a0bcd0;
+    cursor: default;
+}
+.match-body {
+    padding: 10px;
+    height: auto;
+    background: #FFF;
+    margin-bottom: 20px;
+}
+.match-body .match-main {
+    display: none;
+}
+.match-body .match-main-title {
+    font-size: 19px;
+    font-weight: bold;
+}
+.match-body .active {
+    display: block;
+}
+.match-main .match-date {
+    display: block;
+    font-size: 18px;
+}
+.match-main span {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 30px;
+}
+.match-main img {
+    display: inline-block;
+    height: 70px;
+}
+.match-main .clubs-title p {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.clubs-title .home-match {
+    margin-right: 40px;
+}
+.clubs-title .away-match {
+    margin-left: 40px;
+}
+    /***    End schedule   ***/
+    /***    All Carousel Setting    ***/
+.item .carousel-caption {
+    background: rgba(0,0,0,0.6);
+    bottom: 60px;
+}
+.carousel-indicators li {
+    background-color: #061637;
+    border-color: black;
+}
+.carousel-indicators .active {
+    background-color: #871231;
+}
+    /***    End All Carousel Setting    ***/
+    /***    Main Carousel   ***/
+.indicator-cont .carousel-indicators {
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 20px;
+}
+.carousel-inner .item img{
+    min-height: 100px;
+    max-height: 530px;
+    width: 100%;
+}
+.main-carousel {
+    margin-top: 40px;
+}
+.main-carousel .carousel-indicators {
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 20px;
+}
+.main-carousel .carousel-indicators .active {
+    background: none;
+}
+.main-carousel .carousel-indicators li {
+    opacity: 0.5;
+    width: 150px;
+    height: 70px;
+    background: none;
+    margin: 5px;
+    text-indent: 0;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.main-carousel .carousel-indicators li img {
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+.main-carousel .carousel-indicators li.active {
+    opacity: 1;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black; 
+}
+.main-carousel .carousel-inner {
+    max-width: 70%;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+.main-carousel .carousel-control {
+    width: 0%;
+}
+.main-carousel .carousel-control:hover,
+.main-carousel .carousel-control:focus {
+    color: #d41616;
+}
+.carousel-control {
+    left: 90px;
+}
+.main-carousel .carousel-control {
+    right: 90px;
+}
+    /***    End Main Carousel   ***/
+   /***    Barca Fans Section    ***/
+.barca-fans {
+    background-color: #cfcfcf;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.barca-fans .container h2 {
+    color: #9c1737;
+    border-radius: 5px;
+    background-color: #061637;
+    padding: 5px;
+    font-weight: bold;
+}
+.bar-fan img {
+    width: 100%;
+    border: 3px solid #061637;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.bar-fan img:hover {
+    border-color: #061637;
+    box-shadow: 0px 0px 20px #061637;
+    opacity: 1;
+}
+.bar-fan h4 {
+    font-weight: bold;
+    color: #9c1737;
+}
+.bar-fan p {
+    margin-top: 20px;
+    padding: 10px;
+    color: #061637;
+    font-weight: bold;
+}
+    /***    End Barca Fans Section    ***/
+    /***    Special Features Carousel   ***/
+.special-features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.special-features .container {
+        width: 100%;
+}
+.special-features h2 {
+    color: #9c1737;
+}
+.special-feat-carousel .carousel-inner {
+    padding-bottom: 50px;
+    min-height: 160px;
+    overflow: hidden;
+}
+.special-feat-carousel .carousel-indicators {
+    position: static;
+    margin-left: auto;
+    width: 100%;
+}
+.carousel-inner .item h3 {
+    color: #061637;
+    font-weight: bold;
+}
+    /***    End Special Features Carousel   ***/
+    /***    Camp Nou Section    ***/
+.new-camp-nou {
+    margin-bottom: 100px;
+}
+.new-camp-nou h2 {
+    color: #9c1737;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+}
+.campnou-body {
+    border-top: 5px solid #9c1737;
+    border-bottom: 3px solid #313947;
+    background-color: #272f4f;
+}
+.campnou-body .container-fluid img {
+    max-height: 580px;
+    width: 100%;
+}
+.description {
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    min-height: 580px;
+    max-width: 320px;
+    margin-top: -580px;
+    margin-left: 800px;
+    padding: 2em 1.5em;
+}
+.description h3 {
+    color: #FFF;
+    padding: 5px 0px 20px 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.description p {
+    color: #d3d6d7;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+.description button {
+    margin-top: 20em;
+    background: #d3223e;
+    font-weight: bold;
+    border: none;
+    padding: 7px 25px;
+    border-bottom: 2px solid #a01838;
+}
+.description button:hover {
+    background: #9c1737;
+    border-bottom: 2px solid #9c1735;
+}
+.des2 {
+    background: #4f4f4f;
+    color: #FFF;
+}
+.des2 h3 {
+    font-weight: bold;
+    color: #061637;
+    padding-top: 20px;
+    margin-top: 0px;
+}
+.des2 button {
+    margin-top: 2em;
+    background: #d3223e;
+    font-weight: bold;
+    border: none;
+    padding: 7px 25px;
+    border-bottom: 2px solid #a01838;
+    margin-bottom: 20px;
+}
+.des2 button:hover {
+    background: #9c1737;
+    border-bottom: 2px solid #9c1735;
+}
+    /***    End Camp Nou Section    ***/
+    /***    About Section    ***/
+.about {
+    margin-top: 50px;
+}
+.about .container h1 {
+    color: #9c1737;
+}
+.about .container p {
+    color: #061637;
+}
+.about .container img {
+    margin: auto;
+    width: 70%;
+}
+.btn-tickets {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.btn-tickets button:hover {
+    box-shadow: 0px 0px 8px black;
+}
+    /***    End About Section    ***/
+    /***    Tickets Section    ***/
+.tickets-sec {
+    text-align: center;
+    padding: 50px 0px;
+    color: #FFF;
+}
+.btn-tickets {
+    margin-bottom: 20px;
+}
+.get-tickets {
+    display: none;
+    background-color: #061637;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    margin: 0 auto;
+}
+.get-tickets h3 {
+    color: #FFF;
+    font-weight: bold;
+    margin: 10px auto 40px auto;
+    padding: 5px;
+    border-bottom: 3px solid #9c1735;
+    width: 200px;
+}
+.get-tickets p {
+    font-size: 18px;
+}
+.get-tickets p input {
+    padding: 2px 0px 2px 20px;
+    margin-left: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.get-tickets .total {
+    color: #9c1735;
+    font-weight: bold;
+}
+.buy-tickets {
+    font-weight: bold;
+    width: 100px;
+    font-size: 15px;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.buy-tickets:hover {
+    box-shadow: 0px 0px 15px #FFF;
+    color: #061637;
+}
+    /***    Official Store Section  ***/
+.fcb-ofl-store {
+    background: url(../images/backgrounds/506905.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+.fcb-ofl-store .container .store-header {
+    margin-top: 35px;
+}
+.fcb-ofl-store .container .store-header h2 {
+    float: left;
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    border-top: 3px solid #9c1735;
+}
+.fcb-ofl-store .container .store-header a {
+    float: right;
+    padding-top: 20px;
+    background-color: transparent;
+}
+.fcb-ofl-store .container {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+.fcb-ofl-store .container .filter .row {
+    position: relative;
+    top: 2em;
+}
+.filter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #061637;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFF;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.filter button:hover {
+    background-color: #0f2a56;
+}
+.fcb-ofl-store .container .row {
+    margin-top: 5em;
+}
+.store-kit {
+    min-height: 517px;
+    background: #FFF;
+    min-width: 150px;
+    border: 1px solid #c8e8ef;
+    margin-bottom: 20px;
+}
+.highlighted {
+    border: 1px solid blue;
+    position: relative;
+    top: -15px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    box-shadow: 0px 0px 20px #FFF;
+}
+.store-kit img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.store-kit  .disc-kit {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Arial;
+    padding: 10px 10px 10px 10px;;
+}
+.store-kit .price {
+    font-size: 25px;
+    font-weight: bold;
+    color: #666;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background: #e3e3e3;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.store-kit:hover .price {
+    background-color: #061637;
+    color: #FFF;
+}
+.store-kit button, .store-kit a {
+    margin-top: 3em;
+    background: #0f2a56;
+    font-weight: bold;
+    border: none;
+    padding: 7px 25px;
+    border-bottom: 2px solid #061637;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+.store-kit a {
+    margin-top: 1em;
+    background-color: #d3223e;
+    border-bottom: 2px solid #a01838;
+}
+.store-kit button:hover, .store-kit a:hover {
+    background: #9c1737;
+    border-bottom: 2px solid #9c1735;
+}
+    /***    End Official Store Section  ***/
+    /***    Team players Section    ***/
+.team-players {
+    background-image: url(../images/backgrounds/385407.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    margin-bottom: 100px;
+    color: #FFF;
+}
+.team-players h2 {
+    background: rgba(0,0,0,0.5);
+    width: 210px;
+    padding: 10px 0px 10px 20px;
+    border-bottom: 2px solid #9c1735;
+}
+.player-info {
+    margin: 20px auto;
+    max-height: 100%;
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+.player-info a {
+    text-decoration: none;
+}
+.player-info img {
+    border: 3px solid #DDD;
+    border-bottom: none;
+    max-width: 100%;
+}
+.person-unit-content {
+    height: 55px;
+    background-color: #8b0e2b;
+    color: #DDD;
+}
+.person-unit-content .person-unit-content-number {
+    display: block;
+    float: left;
+    width: 55px;
+    background-color: #a01838;
+    height: 55px;
+}
+.person-unit-content-number {
+    position: relative;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 23px;
+    padding: 16px;
+}
+.person-unit-content-name {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 7px;
+    text-transform: uppercase;
+}
+.person-unit-contnen-position {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.team-players a {
+    text-decoration: none;
+    color: #FFF;
+}
+.team-players a:hover .see-full-players {
+    background-color: rgba(250,250,250,0.2);
+}
+.team-players .see-full-players {
+    text-transform: uppercase;
+    width: auto;
+    border-style: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgba(1,1,1,0.7);
+    margin-bottom: 40px;
+}
+.team-players i {
+    float: right;
+    margin-right: 30px;
+}
+    /***    End Team players Section    ***/
+    /***    Footer Section    ***/
+.footer-section {
+    height: 500px;
+    background-color: black;
+}
+    /***    End Footer Section    ***/
