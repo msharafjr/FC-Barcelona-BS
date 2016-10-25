@@ -104,9 +104,10 @@ $(function () {
             
         $(".match-body-child .active").stop(false,false).fadeOut('slow', function(){
 
+            $(this).next().fadeIn('slow');
             $(this).removeClass("active");
             $(this).next().addClass("active");
-            $(this).next().fadeIn();
+            
             checkControls();
         })
         }
@@ -123,9 +124,10 @@ $(function () {
             
         $(".match-body-child .active").stop(false,false).fadeOut('slow', function(){
             
+            $(this).prev().fadeIn('slow');
             $(this).removeClass("active");
             $(this).prev().addClass("active");
-            $(this).prev().fadeIn();
+            
             checkControls();
         })
         }
