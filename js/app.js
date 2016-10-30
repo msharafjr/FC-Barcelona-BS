@@ -2,12 +2,12 @@
 $(function () {
     'use strict';
 
-    $(".store-kit").on('click', '.get', function () {
+    $('.store-kit').on('click', '.get', function () {
 
-        var storKit = $(this).closest(".store-kit"),
+        var storKit = $(this).closest('.store-kit'),
             amount = storKit.data('price'),
-            price = $('<p class="price center-block">' + amount + '</p>'),
-            buyNow = $('<a href="#" class="buy-store btn btn-danger">buy now</a>');
+            price = $('<p/>', { class: 'price center-block'}).text(amount),
+            buyNow = $('<a/>', { href:'#', class:'buy-store btn btn-danger upper'}).text('buy now');
 
         $(this).fadeOut(function () {
 
@@ -17,119 +17,115 @@ $(function () {
         });
     });
 
-
-    $(".store-kit").on('click', '.buy-store', function (event) {
+    $('.store-kit').on('click', '.buy-store', function (event) {
 
         event.preventDefault();
     });
 
 
-    $(".on-sale").on('click', function () {
+    $('.on-sale').on('click', function () {
 
-        $(".highlighted").removeClass("highlighted");
-        $(".store-kit").filter(".onsale").addClass("highlighted");
+        $('.highlighted').removeClass('highlighted');
+        $('.store-kit').filter('.onsale').addClass('highlighted');
     });
 
 
-    $(".expiring").on('click', function () {
+    $('.expiring').on('click', function () {
 
-        $(".highlighted").removeClass("highlighted");
-        $(".store-kit").filter(".expirings").addClass("highlighted");
+        $('.highlighted').removeClass('highlighted');
+        $('.store-kit').filter('.expirings').addClass('highlighted');
     });
 
 
-    $(".info").on('click', function () {
+    $('.info').on('click', function () {
 
-        $(".get-tickets").stop(false, false).slideToggle(150);
+        $('.get-tickets').stop(false, false).slideToggle(150);
     });
 
 
-    $(".get-tickets").on('keyup', '.ticket-num', function () {
+    $('.get-tickets').on('keyup', '.ticket-num', function () {
 
-        var numTickets = +$(this).closest(".get-tickets").data('price'),
+        var numTickets = +$(this).closest('.get-tickets').data('price'),
             cost = +$(this).val();
 
-        if (isNaN(cost)){
+        if (isNaN(cost)) {
 
-            $(".total").text('Number Only');
+            $('.total').text('Number Only');
             $(this).val('');
 
-        } else if (cost > 10){
+        } else if (cost > 10) {
 
-            $(".total").text('Maximum number of tickets is 10');
+            $('.total').text('Maximum number of tickets is 10');
             $(this).val('0');
-            
+
         } else {
 
-            $(".total").text('€' + numTickets * cost);
+            $('.total').text('€' + numTickets * cost);
         }
-        
+
     });
 
 
-    $(".get-tickets").on('click', '.buy-tickets', function (event) {
+    $('.get-tickets').on('click', '.buy-tickets', function (event) {
         event.preventDefault();
     });
 
 
-    //  check control function to add/remove 
+    //  check control function to add/remove
     //  classes to/from controls
     function checkControls () {
-        if ($(".match-body-child .active").is(":last-child")) {
+        if ($('.match-body-child .active').is(':last-child')) {
 
-        $(".next-arr").addClass("controls-false");
-        
-    
-        } else if ($(".match-body-child .active").is(":first-child")) {
+            $('.next-arr').addClass('controls-false');
 
-            $(".next-arr").removeClass("controls-false");
-            $(".prev-arr").addClass("controls-false");
-            
+
+        } else if ($('.match-body-child .active').is(':first-child')) {
+
+            $('.next-arr').removeClass('controls-false');
+            $('.prev-arr').addClass('controls-false');
+
         } else {
 
-            $(".next-arr").removeClass("controls-false");
-            $(".prev-arr").removeClass("controls-false");
+            $('.next-arr').removeClass('controls-false');
+            $('.prev-arr').removeClass('controls-false');
+
         }
     }
 
     //  Schedule controls
-    $(".match-body").on('click', '.next-arr', function (ev) {
+    $('.match-body').on('click', '.next-arr', function (ev) {
 
-
-        if ($(".match-body-child .active").is(':last-child')){
+        if ($('.match-body-child .active').is(':last-child')) {
 
             ev.preventDefault();
 
-        } else{
-            
-        $(".match-body-child .active").stop(false,false).fadeOut('slow', function(){
+        } else {
 
-            $(this).next().fadeIn('slow');
-            $(this).removeClass("active");
-            $(this).next().addClass("active");
-            
-            checkControls();
-        })
+            $('.match-body-child .active').stop(false, false).fadeOut('slow', function () {
+
+                $(this).next().fadeIn('slow').addClass('active');
+                $(this).removeClass('active');
+
+                checkControls();
+            });
         }
-    })
+    });
 
-    $(".match-body").on('click', '.prev-arr', function (ev) {
+    $('.match-body').on('click', '.prev-arr', function (ev) {
 
-        
+        if ($('.match-body-child .active').is(':first-child')) {
 
-        if ($(".match-body-child .active").is(':first-child')){
             ev.preventDefault();
 
-        } else{
-            
-        $(".match-body-child .active").stop(false,false).fadeOut('slow', function(){
-            
-            $(this).prev().fadeIn('slow');
-            $(this).removeClass("active");
-            $(this).prev().addClass("active");
-            
-            checkControls();
-        })
+        } else {
+
+            $('.match-body-child .active').stop(false, false).fadeOut('slow', function () {
+
+                $(this).prev().fadeIn('slow').addClass('active');
+                $(this).removeClass('active');
+
+                checkControls();
+            });
         }
-    })
+    });
 });
